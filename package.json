@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "concurrently \"npm run start --prefix backend\" \"npm run start --prefix frontend\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ImJackJ/culture/issues"
   },
-  "homepage": "https://github.com/ImJackJ/culture#readme"
+  "homepage": "https://github.com/ImJackJ/culture#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
 }

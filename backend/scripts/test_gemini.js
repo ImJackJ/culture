@@ -1,5 +1,5 @@
 require('dotenv').config();
-const { generateCultureContent } = require('./services/gemini');
+const { generateCultureContent } = require('../services/gemini');
 
 async function test() {
     console.log("Testing Gemini API...");
